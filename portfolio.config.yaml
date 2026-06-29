@@ -11,7 +11,7 @@ showPoweredBy: false
 # ── Identity ────────────────────────────────────────────────────────────
 name: "Mehrdad Ghasabehi"
 title: "Postdoctoral Researcher | Mechanical Engineering"
-tagline: "PEM Fuel Cells · AI-Driven Optimization · CFD & Multi-Physics Simulation"
+tagline: "PEM Fuel Cells · AI-Driven Optimization · Renewable Energies"
 email: "m.ghasabei@gmail.com"
 phone: ""
 location: "Tehran, Iran"
@@ -36,7 +36,7 @@ contactFormEndpoint: ""
 # ── Section visibility ─────────────────────────────────────────────────
 sections:
   - { id: about,          show: true  }
-  - { id: stats,          show: true  }
+  - { id: stats,          show: false  }
   - { id: skills,         show: true  }
   - { id: languages,      show: true  }
   - { id: experience,     show: true  }
