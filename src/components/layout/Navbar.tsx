@@ -20,7 +20,7 @@ interface NavbarProps {
 
 const SECTION_LABELS: Record<string, string> = {
   about: 'About',
-  stats: '',
+  stats: 'stats',
   skills: 'Skills',
   languages: 'Languages',
   experience: 'Experience',
