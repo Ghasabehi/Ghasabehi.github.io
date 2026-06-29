@@ -36,7 +36,7 @@ contactFormEndpoint: ""
 # ── Section visibility ─────────────────────────────────────────────────
 sections:
   - { id: about,          show: true  }
-  - { id: stats,          show: true  }  # ← CHANGED to true (shows your stats)
+  - { id: stats,          show: true  }
   - { id: skills,         show: true  }
   - { id: languages,      show: true  }
   - { id: experience,     show: true  }
@@ -56,9 +56,16 @@ social:
   twitter:      ""
   website:      ""
 
+# ── GitHub Integration ──────────────────────────────────────────────────
+github:
+  username: "Ghasabehi"
+  showContributions: false
+  showTopLanguages: false
+  showProfileStats: false
+
 # ── About ──────────────────────────────────────────────────────────────
 about: |
-  I am a Postdoctoral Researcher at KN Toosi University of Technology, specializing in PEM fuel cell modeling, AI-driven optimization, and multi-physics simulation. My work bridges fundamental transport phenomena with data-driven surrogate modeling to enhance fuel cell performance and durability. With multiple Q1 publications and an upcoming Elsevier book on AI-based energy optimization, I bring a strong track record in both theoretical analysis and applied computational methods for clean energy systems.
+  Ph.D. in Mechanical Engineering specializing in PEM fuel cell modeling, optimization, and AI-driven performance enhancement. Extensive expertise in analytical, CFD, and data-driven modeling of transport phenomena, interface behavior, and degradation mechanisms. First-author of multiple Q1 journal articles and co-author of an Elsevier book on AI-based fuel cell optimization (2025). My research tackles performance bottlenecks in hydrogen technologies—a key emerging low-carbon solution highlighted in this position—directly supporting their viability for large-scale renewable energy storage and integration into future decarbonized energy systems.
 
 # ── Stats ──────────────────────────────────────────────────────────────
 stats:
@@ -127,27 +134,25 @@ experience:
       - Hybrid grid-connected systems
 
 # ── Projects ───────────────────────────────────────────────────────────
+# ✅ Updated Featured Projects
 projects:
-  - name: "Academic Honors & Teaching Experience"
-    description: |
-      Recipient of multiple National Elite Foundation awards, including the Vezvai (2020-2024), Sayyad Shirazi (2022-2024), and Shahriari (2024-2026) grants for outstanding research performance.
-      
-      Served as a Fluid Mechanics and Thermodynamics Laboratory instructor at KN Toosi University (2021-2024), supervising over 50 undergraduate students in experiments and data reporting. Also delivered an invited lecture on PEM Fuel Cells for the KN Toosi Mechanical Association (2023).
-    tags: ["Awards", "Teaching", "Mentorship", "Fluid Mechanics"]
+  - name: "Automated NLP Pipeline for News Summarization"
+    description: "Built an automated NLP pipeline using Python and Hugging Face's BART model to fetch, rank, and generate abstractive summaries from live RSS news feeds."
+    tags: ["Python", "Hugging Face", "BART", "NLP", "RSS"]
     liveUrl: ""
     repoUrl: ""
     featured: true
 
-  - name: "Surrogate Modeling & Optimization for PEMFC Flow Fields"
-    description: "Developed data-driven surrogate models and multi-objective optimization frameworks to enhance performance and two-phase flow behavior in PEM fuel cells with novel flow-field geometries."
-    tags: ["AI", "Surrogate Modeling", "PEMFC", "Optimization"]
+  - name: "Techno-Economic Feasibility of Hydrogen Fuel Cell Vehicles in Iran"
+    description: "Assessed the techno-economic feasibility of hydrogen fuel cell vehicles in Iran, evaluating domestic hydrogen production potential (green/blue), refueling infrastructure gaps, and strategic synergies with MAPNA's turbine portfolio to deliver a practical deployment roadmap."
+    tags: ["Hydrogen", "Fuel Cell Vehicles", "Techno-Economic Analysis", "MAPNA", "Iran"]
     liveUrl: ""
     repoUrl: ""
     featured: true
 
-  - name: "PEMFC Degradation Modeling"
-    description: "Investigated degradation mechanisms and durability in PEM fuel cells through analytical and numerical modeling, focusing on performance decay and mitigation strategies."
-    tags: ["Degradation", "Durability", "PEMFC", "Analytical Modeling"]
+  - name: "AI-Driven Surrogate Modeling & Optimization for PEMFC Flow Fields"
+    description: "Developed surrogate modeling and optimization frameworks for PEMFC flow fields using AI."
+    tags: ["PEMFC", "Surrogate Modeling", "AI", "Optimization", "CFD"]
     liveUrl: ""
     repoUrl: ""
     featured: true
