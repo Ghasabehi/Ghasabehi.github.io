@@ -127,6 +127,15 @@ experience:
       - Renewable energy feasibility
       - System integration
       - Hybrid grid-connected systems
+  - company: "KN Toosi University of Technology"
+    role: "Teaching Assistant & Invited Lecturer"    # ✅ TEACHING IS HERE
+    period: "2021 – 2024"
+    description: |
+      Co-supervised and trained 50+ undergraduates in laboratory experiments, ensuring accurate data collection and reporting. Delivered an invited lecture on PEM Fuel Cells for the KN Toosi Mechanical Association (2023).
+    highlights:
+      - Fluid Mechanics and Thermodynamics Laboratory
+      - 50+ undergraduates trained
+      - Invited Lecturer – PEM Fuel Cell Short Course
 
 # ── Projects ───────────────────────────────────────────────────────────
 projects:
