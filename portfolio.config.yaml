@@ -56,12 +56,7 @@ social:
   twitter:      ""
   website:      ""
 
-# ── GitHub Integration ──────────────────────────────────────────────────
-github:
-  username: "Ghasabehi"
-  showContributions: false
-  showTopLanguages: false
-  showProfileStats: false
+# ⚠️ github block REMOVED – this should force the stats to disappear
 
 # ── About ──────────────────────────────────────────────────────────────
 about: |
@@ -174,9 +169,7 @@ education:
     details: "GPA: 17.54/20 | Project: 'Numerical Investigation of Flow over a Blockage'"
 
 # ── Publications ───────────────────────────────────────────────────────
-# ✅ Sorted strictly by year (newest to oldest)
 publications:
-  # 2026
   - title: "Leveraging machine learning for advanced flow field design in PEMFCs"
     authors: "Ghasabehi, M., Shams, M."
     venue: "Energy Conversion and Management: X, 101586"
@@ -186,7 +179,6 @@ publications:
     type: "journal"
     tags: ["Machine Learning", "Flow Field", "Design", "PEMFC"]
 
-  # 2025 (Book)
   - title: "PEM Fuel Cells Performance: Simulation and Optimization by AI"
     authors: "Shams, M., & Ghasabehi, M."
     venue: "Elsevier, 1st Edition. Paperback ISBN: 978-0-443-40356-9 | eBook ISBN: 978-0-443-40357-6"
@@ -196,7 +188,6 @@ publications:
     type: "book"
     tags: ["Fuel Cells", "AI", "Optimization", "Simulation", "Elsevier"]
 
-  # 2024
   - title: "The optimization of an innovative interdigitated flow field proton exchange membrane fuel cell by using artificial intelligence"
     authors: "Asadi, M.R., Ghasabehi, M., Ghanbari, S., Shams, M."
     venue: "Energy 290, 130131"
@@ -242,7 +233,6 @@ publications:
     type: "journal"
     tags: ["Two-Phase Flow", "Surrogate Model", "Multi-Objective"]
 
-  # 2023
   - title: "Multi-objective optimization of a double tapered flow field Proton Exchange Membrane Fuel cell"
     authors: "Farokhi, E., Ghasabehi, M., Shams, M."
     venue: "Energy Reports 10, 1652-1671"
@@ -252,7 +242,6 @@ publications:
     type: "journal"
     tags: ["Double Tapered", "Multi-Objective", "PEMFC"]
 
-  # 2022
   - title: "Cathode side transport phenomena investigation and Multi-Objective optimization of a tapered parallel flow field PEMFC"
     authors: "Ghasabehi, M., Jabbary, A., Shams, M."
     venue: "Energy Conversion and Management 265, 115761"
@@ -262,7 +251,6 @@ publications:
     type: "journal"
     tags: ["Transport Phenomena", "Multi-Objective", "Tapered Flow Field", "PEMFC"]
 
-  # 2021
   - title: "Performance analysis of an innovative parallel flow field design of proton exchange membrane fuel cells using multiphysics simulation"
     authors: "Ghasabehi, M., Ashrafi, M., Shams, M."
     venue: "Fuel 285, 119194"
