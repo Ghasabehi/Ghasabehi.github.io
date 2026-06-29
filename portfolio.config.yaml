@@ -18,8 +18,8 @@ location: "Tehran, Iran"
 avatarUrl: "https://avatars.githubusercontent.com/u/148551599?v=4"
 
 # ── Resume download ────────────────────────────────────────────────────
-resumeUrl: ""
-resumeFileName: ""
+resumeUrl: ""  # ✅ REMOVED (empty)
+resumeFileName: ""  # ✅ REMOVED (empty)
 
 # ── Status ─────────────────────────────────────────────────────────────
 openToWork: true
@@ -44,7 +44,7 @@ sections:
   - { id: education,      show: false }  # ✅ HIDDEN
   - { id: certifications, show: false }
   - { id: publications,   show: true  }
-  - { id: testimonials,   show: false }
+  - { id: testimonials,   show: false }  # ✅ HIDDEN (no reviewers)
   - { id: contact,        show: true  }
 
 # ── Social links ──────────────────────────────────────────────────────
@@ -86,17 +86,6 @@ skills:
 # ── Experience ─────────────────────────────────────────────────────────
 # ⚠️ SECTION HIDDEN (show: false)
 experience:
-  - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
-    role: "Postdoctoral Researcher (Supported by INSF)"
-    period: "Jan 2025 – Dec 2025"
-    description: |
-      Leading advanced research on AI-driven optimization of clean energy systems, focusing on surrogate modeling, multi-objective optimization, and data-driven predictive analytics.
-    highlights:
-      - AI-driven surrogate modeling & optimization
-      - Unsteady multi-phase PEMFC modeling
-      - Collaboration with experimental groups
-      - Mentoring graduate students
-
   - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
     role: "Ph.D. Researcher"
     period: "2020 – 2024"
