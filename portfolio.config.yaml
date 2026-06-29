@@ -36,7 +36,7 @@ contactFormEndpoint: ""
 # ── Section visibility ─────────────────────────────────────────────────
 sections:
   - { id: about,          show: true  }
-  - { id: stats,          show: false  }
+  - { id: stats,          show: true  }
   - { id: skills,         show: true  }
   - { id: languages,      show: true  }
   - { id: experience,     show: true  }
