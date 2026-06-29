@@ -1,310 +1,279 @@
 # ╔══════════════════════════════════════════════════════════════════════╗
 # ║              GitVitae — Portfolio Configuration                      ║
 # ║  This is the only file you need to edit.                             ║
-# ║  Run  pnpm check-config  to catch mistakes before deploying.         ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 
-# ╔══════════════════════════════════════════════════════════════════════╗
-# ║  ** FIRST THING TO CHANGE **                                         ║
-# ║                                                                      ║
-# ║  siteMode: "landing"  → shows the GitVitae intro page (default)      ║
-# ║  siteMode: "portfolio" → shows YOUR portfolio                        ║
-# ║                                                                      ║
-# ║  Change it to "portfolio" once you have filled in your details.      ║
-# ╚══════════════════════════════════════════════════════════════════════╝
-siteMode: "landing"   # ← CHANGE THIS to "portfolio"
-siteUrl:  "https://yourusername.github.io"  # ← Your GitHub Pages URL (used for RSS & canonical links)
-showPoweredBy: false  # Set to true to show a small "Made with GitVitae" badge in your footer (helps others discover GitVitae)
+# ── Site Mode ──────────────────────────────────────────────────────────
+siteMode: "portfolio"
+siteUrl: "https://Ghasabehi.github.io"
+showPoweredBy: false
 
-# ── Identity ───────────────────────────────────────────── (required) ──
-name: "Git Vitae"              # Your name — shown in the header and used as a fallback in the avatar
-title: "Portfolio-Resume Engineer"
-tagline: "I build free portfolios and resumes for everyone."
-email: "git-vitae@proton.me"
-phone: ""                    # Optional — e.g. "+1 (555) 000-1234". Shown in contact section and resume.
-location: "San Francisco, CA"
-avatarUrl: "https://api.dicebear.com/9.x/fun-emoji/svg?seed=Alex&mouth[]=wideSmile&radius=12"  # Demo avatar — replace with your own photo URL (see instructions below)
-# How to add a profile photo (free, no extra account needed):
-#   1. Go to your GitHub repo → click "Add file" → "Upload files"
-#   2. Upload your photo (e.g. avatar.jpg) into a folder called "public/"
-#   3. After committing, open the file on GitHub and copy the raw URL:
-#      https://raw.githubusercontent.com/YOU/your-repo/main/public/avatar.jpg
-#   4. Paste that URL here.
-# Leave empty to show your initials as a styled placeholder.
+# ── Identity ────────────────────────────────────────────────────────────
+name: "Mehrdad Ghasabehi"
+title: "Postdoctoral Researcher | Mechanical Engineering"
+tagline: "PEM Fuel Cells · AI-Driven Optimization · CFD & Multi-Physics Simulation"
+email: "m.ghasabei@gmail.com"
+phone: ""
+location: "Tehran, Iran"
+avatarUrl: "https://avatars.githubusercontent.com/u/148551599?v=4"
 
 # ── Resume download ────────────────────────────────────────────────────
-# Optional: link directly to a hosted PDF (Google Drive, Dropbox, etc.)
-# If left blank the navbar "Resume" button opens the built-in resume page
-# where visitors can use "Save PDF" to print their own copy.
-#
-# How to get a direct download link:
-#   1. Visit /resume in your portfolio, click "Save PDF" -> save the file
-#   2. Upload that PDF to Google Drive / Dropbox and copy the direct link
-#   3. Paste the link below and update resumeFileName accordingly
-#
-# resumeUrl: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
-# resumeFileName: "Git_Vitae_Resume.pdf"
+resumeUrl: ""
+resumeFileName: ""
 
 # ── Status ─────────────────────────────────────────────────────────────
-openToWork: true         # Shows "Open to Opportunities" banner when true
+openToWork: true
 
 # ── Theme ──────────────────────────────────────────────────────────────
-defaultTheme: "system"   # Options: light | dark | system
-colorPreset: "indigo"    # Options: indigo | emerald | rose | amber | ocean | slate | custom
-# primaryColor: "#6366f1" # Optional — pick any colour you like and paste its hex code here.
-                           # Overrides colorPreset above. To find a hex code:
-                           #   → Google "colour picker", pick a colour, copy the 6-digit code (e.g. #e11d48)
-                           #   → or grab one from coolors.co / your favourite site's colour
-
+defaultTheme: "system"
+colorPreset: "indigo"
 resumeTheme:
-  twoColumn: "indigo"    # Accent color for the two-column resume layout
-  classic: "emerald"     # Accent color for the classic resume layout
+  twoColumn: "indigo"
+  classic: "indigo"
 
-contactFormEndpoint: ""  # Optional — paste a Formspree URL (https://formspree.io/f/xxxx)
-                           # or any POST endpoint that accepts {name, email, message}.
-                           # Leave empty to use a pre-filled mailto: link instead.
+contactFormEndpoint: ""
 
 # ── Section visibility ─────────────────────────────────────────────────
-# Set show: false to hide any section from your portfolio
 sections:
   - { id: about,          show: true  }
-  - { id: stats,          show: false }  # Stats already appear as cards in the About section above — enable this only if you want a dedicated full-width stats section
+  - { id: stats,          show: false }
   - { id: skills,         show: true  }
   - { id: languages,      show: true  }
-  - { id: experience,     show: true  }
+  - { id: experience,     show: false }  # ✅ HIDDEN
   - { id: projects,       show: true  }
-  - { id: education,      show: true  }
-  - { id: certifications, show: true  }
-  - { id: publications,   show: false }
-  - { id: testimonials,   show: true  }
+  - { id: education,      show: false }  # ✅ HIDDEN
+  - { id: certifications, show: false }
+  - { id: publications,   show: true  }
+  - { id: testimonials,   show: false }
   - { id: contact,        show: true  }
 
-# ── Social links ───────────────────────────── (leave blank to hide) ───
+# ── Social links ──────────────────────────────────────────────────────
 social:
-  github:   "https://github.com/yourusername"
-  linkedin: "https://linkedin.com/in/yourusername"
-  twitter:  ""
-  website:  ""
+  github:       "https://github.com/Ghasabehi"
+  linkedin:     "https://www.linkedin.com/in/mehrdad-ghasabehi-656631213/"
+  orcid:        "https://orcid.org/0009-0001-3313-2232"
+  researchgate: "https://www.researchgate.net/profile/Mehrdad-Ghasabehi"
+  twitter:      ""
+  website:      ""
 
 # ── About ──────────────────────────────────────────────────────────────
-# Use | for multi-line text. Indent each line by 2 spaces.
 about: |
-  I'm a portfolio-resume engineer with 5+ years of experience building products
-  that people love. I specialize in React, Node.js, and distributed systems.
-  When I'm not coding, I'm hiking trails or experimenting with new coffee
-  brewing methods.
-
+  I am a Postdoctoral Researcher at KN Toosi University of Technology, specializing in PEM fuel cell modeling, AI-driven optimization, and multi-physics simulation. My work bridges fundamental transport phenomena with data-driven surrogate modeling to enhance fuel cell performance and durability. With multiple Q1 publications and an upcoming Elsevier book on AI-based energy optimization, I bring a strong track record in both theoretical analysis and applied computational methods for clean energy systems.
 
 # ── Stats ──────────────────────────────────────────────────────────────
-# Customise each label and value freely — change "Projects Shipped" to
-# "Active Customers", "Happy Clients", "Open Source Stars", etc.
-# Optional fields: prefix (e.g. "$") and suffix (e.g. "+" or "k").
-# Remove all entries or set show: false above to hide this section.
 stats:
-  - { label: "Years Experience", value: 5,    suffix: "+" }
-  - { label: "Projects Shipped", value: 20,   suffix: "+" }
-  - { label: "Happy Clients",    value: 50,   suffix: "+" }
-  - { label: "Cups of Coffee",   value: 1200, suffix: ""  }
-
-# Examples of other combinations you can use:
-#   - { label: "Active Users",    value: 10000, suffix: "+" }
-#   - { label: "Revenue",         value: 2,     prefix: "$", suffix: "M+" }
-#   - { label: "Countries",       value: 12,    suffix: ""  }
+  - { label: "Research Years", value: 7, suffix: "+" }
+  - { label: "Publications", value: 11, suffix: "" }
+  - { label: "Total Citations", value: 422, suffix: "+" }
+  - { label: "Book", value: 1, suffix: "" }
 
 # ── Languages ──────────────────────────────────────────────────────────
-# level options: Native | Fluent | Conversational | Basic
 languages:
-  - { name: "English",  level: "Native"        }
-  - { name: "Spanish",  level: "Conversational" }
-  - { name: "Mandarin", level: "Basic"          }
+  - { name: "Persian",  level: "Native"   }
+  - { name: "English",  level: "Fluent"   }
 
 # ── Skills ─────────────────────────────────────────────────────────────
 skills:
-  - category: "Frontend"
-    items: [React, TypeScript, Next.js, Tailwind CSS, Framer Motion]
-  - category: "Backend"
-    items: [Node.js, Express, PostgreSQL, Redis, GraphQL]
-  - category: "DevOps"
-    items: [Docker, AWS, CI/CD, Kubernetes, Terraform]
-  - category: "Tools"
-    items: [Git, Figma, Jest, Storybook, Datadog]
+  - category: "CFD & Simulation"
+    items: ["ANSYS Fluent", "COMSOL Multiphysics", "EES", "Tecplot", "SolidWorks"]
+  - category: "Programming & Data Science"
+    items: ["Python", "MATLAB", "Minitab", "Physics-Informed ML", "Surrogate Modeling"]
+  - category: "Pre/Post-processing"
+    items: ["Gambit", "Design Modeler"]
+  - category: "Optimization & Modeling"
+    items: ["Multi-Objective Optimization", "AI-Driven Surrogate Modeling", "Multi-Physics Simulation", "PEMFC Durability"]
 
 # ── Experience ─────────────────────────────────────────────────────────
+# ⚠️ SECTION HIDDEN (show: false)
 experience:
-  - company: "Acme Corp"
-    role: "Senior Full-Stack Engineer"
-    period: "2022 – Present"
+  - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
+    role: "Postdoctoral Researcher (Supported by INSF)"
+    period: "Jan 2025 – Dec 2025"
     description: |
-      Led migration of monolithic Rails app to microservices.
-      Reduced p99 latency by 60%. Mentored a team of 4 engineers.
+      Leading advanced research on AI-driven optimization of clean energy systems, focusing on surrogate modeling, multi-objective optimization, and data-driven predictive analytics.
     highlights:
-      - Microservices migration
-      - 60% latency reduction
-      - Team leadership
+      - AI-driven surrogate modeling & optimization
+      - Unsteady multi-phase PEMFC modeling
+      - Collaboration with experimental groups
+      - Mentoring graduate students
 
-  - company: "Startup XYZ"
-    role: "Software Engineer"
-    period: "2020 – 2022"
+  - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
+    role: "Ph.D. Researcher"
+    period: "2020 – 2024"
     description: |
-      Built real-time collaboration features for a SaaS platform serving
-      50k users. Owned the entire frontend from scratch.
+      Developed analytical and AI-driven models for oxygen transport resistance and water saturation prediction in PEMFCs. Designed and optimized novel flow-field geometries using CFD, surrogate modeling, and multi-objective optimization.
     highlights:
-      - Real-time collaboration
-      - 50k users
-      - Frontend ownership
+      - Analytical modeling of oxygen transport
+      - Multi-objective optimization
+      - 11 journal publications
 
-  - company: "Freelance"
-    role: "Web Developer"
-    period: "2018 – 2020"
+  - company: "KN Toosi University of Technology"
+    role: "M.Sc. Researcher"
+    period: "2017 – 2020"
     description: |
-      Delivered 20+ web projects for small businesses and agencies across
-      e-commerce, marketing, and internal tools.
+      Conducted CFD simulations of modified PEMFC flow-fields, improving mass transport and mitigating flooding. Validated simulation results with experimental data.
     highlights:
-      - 20+ projects
-      - E-commerce
-      - Internal tools
+      - CFD simulation of flow-fields
+      - Flooding mitigation
+      - Experimental validation
+
+  - company: "Monenco Iran Consulting Engineers"
+    role: "Industry Intern – Renewable Energy"
+    period: "Sep 2024 – Dec 2024"
+    description: |
+      Supported applied research and feasibility studies on renewable energy projects, contributing to system integration, performance optimization, and hybrid grid-connected systems.
+    highlights:
+      - Renewable energy feasibility
+      - System integration
+      - Hybrid grid-connected systems
 
 # ── Projects ───────────────────────────────────────────────────────────
-# Set featured: true to show in the Featured section (max 3 recommended)
 projects:
-  - name: "OpenDesk"
-    description: "An open-source project management tool built with React and Go. 2.3k GitHub stars. Real-time updates via WebSockets."
-    tags: [React, Go, WebSockets, PostgreSQL]
-    liveUrl: "https://opendesk.example.com"
-    repoUrl: "https://github.com/yourusername/opendesk"
+  - name: "Academic Honors & Teaching Experience"
+    description: |
+      Recipient of multiple National Elite Foundation awards, including the Vezvai (2020-2024), Sayyad Shirazi (2022-2024), and Shahriari (2024-2026) grants for outstanding research performance.
+      
+      Served as a Fluid Mechanics and Thermodynamics Laboratory instructor at KN Toosi University (2021-2024), supervising over 50 undergraduate students in experiments and data reporting. Also delivered an invited lecture on PEM Fuel Cells for the KN Toosi Mechanical Association (2023).
+    tags: ["Awards", "Teaching", "Mentorship", "Fluid Mechanics"]
+    liveUrl: ""
+    repoUrl: ""
     featured: true
 
-  - name: "CodeLens"
-    description: "VS Code extension that uses AI to generate inline documentation. 10k+ installs from the marketplace."
-    tags: [TypeScript, OpenAI, "VS Code API"]
+  - name: "Surrogate Modeling & Optimization for PEMFC Flow Fields"
+    description: "Developed data-driven surrogate models and multi-objective optimization frameworks to enhance performance and two-phase flow behavior in PEM fuel cells with novel flow-field geometries."
+    tags: ["AI", "Surrogate Modeling", "PEMFC", "Optimization"]
     liveUrl: ""
-    repoUrl: "https://github.com/yourusername/codelens"
+    repoUrl: ""
     featured: true
 
-  - name: "PriceWatch"
-    description: "Browser extension that tracks price history on e-commerce sites and alerts users to drops."
-    tags: [JavaScript, "Chrome API", Node.js]
-    liveUrl: "https://pricewatch.example.com"
-    repoUrl: "https://github.com/yourusername/pricewatch"
-    featured: false
-
-  - name: "Logbook"
-    description: "A minimalist journaling app with end-to-end encryption. Built in a weekend. 500+ users."
-    tags: ["React Native", SQLite, Crypto]
+  - name: "PEMFC Degradation Modeling"
+    description: "Investigated degradation mechanisms and durability in PEM fuel cells through analytical and numerical modeling, focusing on performance decay and mitigation strategies."
+    tags: ["Degradation", "Durability", "PEMFC", "Analytical Modeling"]
     liveUrl: ""
-    repoUrl: "https://github.com/yourusername/logbook"
-    featured: false
+    repoUrl: ""
+    featured: true
 
 # ── Education ──────────────────────────────────────────────────────────
+# ⚠️ SECTION HIDDEN (show: false)
 education:
-  - institution: "University of California, Berkeley"
-    degree: "B.S. Computer Science"
-    period: "2014 – 2018"
-
-# ── Certifications ─────────────────────────────────────────────────────
-certifications:
-  - title: "AWS Certified Solutions Architect – Associate"
-    issuer: "Amazon Web Services"
-    date: "2023"
-    credentialUrl: "https://aws.amazon.com/verification"
-    badgeUrl: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
-    tags: [Cloud, Architecture, AWS]
-
-  - title: "Professional Scrum Master I"
-    issuer: "Scrum.org"
-    date: "2022"
-    credentialUrl: "https://www.scrum.org/certificates"
-    badgeUrl: "https://images.credly.com/size/340x340/images/a2790314-008a-4c3d-9e11-2a8f48155adc/image.png"
-    tags: [Agile, Scrum, Leadership]
-
-  - title: "Google Professional Data Engineer"
-    issuer: "Google Cloud"
-    date: "2021"
-    credentialUrl: ""
-    badgeUrl: ""
-    tags: [Data, GCP, BigQuery]
-
+  - institution: "KN Toosi University of Technology, Tehran, Iran"
+    degree: "Ph.D. in Mechanical Engineering"
+    period: "2020 – 2024"
+    details: "GPA: 18.14/20 | Dissertation: 'Analytical Model for Oxygen Transport Resistance in PEM Fuel Cells with Parallel Flow Field'"
+  
+  - institution: "KN Toosi University of Technology, Tehran, Iran"
+    degree: "M.Sc. in Mechanical Engineering"
+    period: "2017 – 2020"
+    details: "GPA: 17.8/20 | Thesis: 'Numerical Performance Study of Modified Flow-Field in PEM Fuel Cells'"
+  
+  - institution: "Urmia University, Urmia, Iran"
+    degree: "B.Sc. in Mechanical Engineering"
+    period: "2013 – 2017"
+    details: "GPA: 17.54/20 | Project: 'Numerical Investigation of Flow over a Blockage'"
 
 # ── Publications ───────────────────────────────────────────────────────
-# Optional — ideal for researchers, academics, and technical writers.
-# type options: conference | journal | preprint | book-chapter | workshop
 publications:
-  - title: "Scaling Real-Time Collaboration in Distributed Systems"
-    authors: "Rivera A, Chen L, Patel S"
-    venue: "USENIX ATC 2023"
-    year: "2023"
-    url: "https://arxiv.org/abs/example"
-    type: "conference"
-    tags: [distributed-systems, real-time, scalability]
-
-  - title: "Micro-Frontend Architecture Patterns for Large-Scale SPAs"
-    authors: "Rivera A"
-    venue: "IEEE Software"
-    year: "2022"
+  - title: "Performance analysis of an innovative parallel flow field design of proton exchange membrane fuel cells using multiphysics simulation"
+    authors: "Ghasabehi, M., Ashrafi, M., Shams, M."
+    venue: "Fuel 285, 119194"
+    year: "2021"
+    citations: 114
     url: ""
     type: "journal"
-    tags: [frontend, architecture, micro-frontends]
+    tags: ["PEMFC", "Flow Field", "Multiphysics", "CFD"]
 
-# ── Testimonials ───────────────────────────────────────────────────────
-testimonials:
-  - name: "Sarah Chen"
-    title: "Engineering Manager"
-    company: "Acme Corp"
-    relationship: "Manager"   # e.g. Manager | Colleague | Client | Mentor
-    quote: |
-      Alex is one of the most thoughtful engineers I've had the pleasure of
-      working with. They consistently delivered high-quality work on time and
-      elevated the entire team's standards.
-    photoUrl: ""              # URL to headshot — leave empty for initials
+  - title: "Cathode side transport phenomena investigation and Multi-Objective optimization of a tapered parallel flow field PEMFC"
+    authors: "Ghasabehi, M., Jabbary, A., Shams, M."
+    venue: "Energy Conversion and Management 265, 115761"
+    year: "2022"
+    citations: 75
+    url: ""
+    type: "journal"
+    tags: ["Transport Phenomena", "Multi-Objective", "Tapered Flow Field", "PEMFC"]
 
-  - name: "James Okafor"
-    title: "Senior Product Designer"
-    company: "Startup XYZ"
-    relationship: "Colleague"
-    quote: |
-      Working with Alex was a joy. They have a rare ability to translate vague
-      product requirements into clean, elegant code. Our collaboration made the
-      product significantly better.
-    photoUrl: ""
+  - title: "Multi-objective optimization of operating conditions of an enhanced parallel flow field proton exchange membrane fuel cell"
+    authors: "Ghasabehi, M., Shams, M., Kanani, H."
+    venue: "Energy Conversion and Management 230, 113798"
+    year: "2021"
+    citations: 69
+    url: ""
+    type: "journal"
+    tags: ["Operating Conditions", "Multi-Objective", "Optimization"]
 
-  - name: "Priya Nair"
-    title: "CTO"
-    company: "FinTech Ventures"
-    relationship: "Client"
-    quote: |
-      Alex delivered the project ahead of schedule and the code quality was
-      exceptional. They communicated proactively, flagged risks early, and were
-      genuinely invested in our success.
-    photoUrl: ""
+  - title: "The optimization of an innovative interdigitated flow field proton exchange membrane fuel cell by using artificial intelligence"
+    authors: "Asadi, M.R., Ghasabehi, M., Ghanbari, S., Shams, M."
+    venue: "Energy 290, 130131"
+    year: "2024"
+    citations: 48
+    url: ""
+    type: "journal"
+    tags: ["Interdigitated Flow Field", "AI", "Optimization"]
 
-# ── Analytics (optional, always free) ──────────────────────────────────────
-# Two ways to track who visits your portfolio — both free, no credit card:
-#
-# 1. GitHub built-in traffic (zero setup — already there!)
-#    Go to your repository → Insights → Traffic.
-#    Shows unique visitors, page views, and top referrers for the last 14 days.
-#
-# 2. GoatCounter (more detail, privacy-friendly, free forever for personal use)
-#    Sign up at https://www.goatcounter.com — you'll get a short code, e.g. "janedoe"
-#    Uncomment the two lines below and replace "yourcode" with your GoatCounter code:
-#
-# analytics:
-#   goatcounterCode: "yourcode"
+  - title: "Optimization of baffle and tapering integration in the PEM fuel cell flow field employing artificial intelligence"
+    authors: "Ghasabehi, M., Ghanbari, S., Asadi, M.R., Shams, M., Kanani, H."
+    venue: "Energy 302, 131884"
+    year: "2024"
+    citations: 34
+    url: ""
+    type: "journal"
+    tags: ["AI", "Baffle", "Tapering", "Optimization"]
 
-# ── Blog ─────────────────────────────────────────────────────────────────────
-# Drop any .md file into the blog/ folder — it becomes a post automatically.
-# Each post starts with a small block called "frontmatter" (between --- lines):
-#
-#   ---
-#   title: "My Post Title"
-#   date: "2025-01-15"
-#   tags: [life, tech]
-#   excerpt: "One sentence that appears on the listing page."
-#   ---
-#
-# Then write your post in plain Markdown below the closing ---.
-# See the sample posts in blog/ to get started.
+  - title: "An inquiry into transport phenomena and artificial intelligence-based optimization of a novel bio-inspired flow field for proton exchange membrane fuel cells"
+    authors: "Ghanbari, S., Ghasabehi, M., Asadi, M.R., Shams, M."
+    venue: "Applied Energy 376, 124260"
+    year: "2024"
+    citations: 28
+    url: ""
+    type: "journal"
+    tags: ["Bio-Inspired", "AI", "Transport Phenomena"]
+
+  - title: "Multi-objective optimization of a double tapered flow field Proton Exchange Membrane Fuel cell"
+    authors: "Farokhi, E., Ghasabehi, M., Shams, M."
+    venue: "Energy Reports 10, 1652-1671"
+    year: "2023"
+    citations: 25
+    url: ""
+    type: "journal"
+    tags: ["Double Tapered", "Multi-Objective", "PEMFC"]
+
+  - title: "Predicting water saturation and oxygen transport resistance in proton exchange membrane fuel cell by artificial intelligence"
+    authors: "Ghasabehi, M., Shams, M."
+    venue: "Fuel 368, 131557"
+    year: "2024"
+    citations: 16
+    url: ""
+    type: "journal"
+    tags: ["AI", "Water Saturation", "Oxygen Transport", "PEMFC"]
+
+  - title: "Multi-objective optimization of two-phase flow in the proton exchange membrane fuel cells based on a data driven surrogate model"
+    authors: "Ghasabehi, M., Farokhi, E., Shams, M."
+    venue: "Journal of Industrial and Engineering Chemistry 130, 324-345"
+    year: "2024"
+    citations: 13
+    url: ""
+    type: "journal"
+    tags: ["Two-Phase Flow", "Surrogate Model", "Multi-Objective"]
+
+  - title: "Leveraging machine learning for advanced flow field design in PEMFCs"
+    authors: "Ghasabehi, M., Shams, M."
+    venue: "Energy Conversion and Management: X, 101586"
+    year: "2026"
+    citations: 0
+    url: ""
+    type: "journal"
+    tags: ["Machine Learning", "Flow Field", "Design", "PEMFC"]
+
+  - title: "Sensitivity Analysis and Performance Enhancement of Proton Exchange Membrane Fuel Cell"
+    authors: "Ghasabehi, M., Shams, M."
+    venue: "2021"
+    year: "2021"
+    citations: 0
+    url: ""
+    type: "conference"
+    tags: ["Sensitivity Analysis", "Performance", "PEMFC"]
+
+# ── Blog ───────────────────────────────────────────────────────────────
 blog:
   enabled: true
   title: "Blog"
-  description: "Thoughts, stories and ideas — everything in one place."
+  description: "Thoughts on fuel cells, AI, and clean energy."
