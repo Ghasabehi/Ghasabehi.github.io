@@ -368,7 +368,6 @@ function TwoColumnLayout() {
       <div className="grid grid-cols-[200px_1fr] gap-8">
         {/* Sidebar */}
         <aside className="border-border space-y-0 border-r pr-6">
-          <SkillsBlock />
           <LanguagesBlock />
           <EducationBlock />
           <CertificationsBlock />
