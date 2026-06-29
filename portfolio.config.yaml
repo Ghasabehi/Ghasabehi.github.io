@@ -18,8 +18,8 @@ location: "Tehran, Iran"
 avatarUrl: "https://avatars.githubusercontent.com/u/148551599?v=4"
 
 # ── Resume download ────────────────────────────────────────────────────
-resumeUrl: ""
-resumeFileName: ""
+resumeUrl: "https://drive.google.com/uc?export=download&id=1kaopODHVS6E9IvdWL7NeB7aPOsPOxbnC"
+resumeFileName: "Mehrdad_Ghasabehi_Resume.pdf"
 
 # ── Status ─────────────────────────────────────────────────────────────
 openToWork: true
@@ -94,7 +94,7 @@ skills:
 experience:
   - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
     role: "Postdoctoral Researcher (Supported by INSF)"
-    period: "Jan 2025 – Dec 2025"
+    period: "Jan 2025 – Present"
     description: |
       Leading advanced research on AI-driven optimization of clean energy systems, focusing on surrogate modeling, multi-objective optimization, and data-driven predictive analytics.
     highlights:
@@ -134,7 +134,6 @@ experience:
       - Hybrid grid-connected systems
 
 # ── Projects ───────────────────────────────────────────────────────────
-# ✅ Updated Featured Projects
 projects:
   - name: "Automated NLP Pipeline for News Summarization"
     description: "Built an automated NLP pipeline using Python and Hugging Face's BART model to fetch, rank, and generate abstractive summaries from live RSS news feeds."
@@ -175,8 +174,9 @@ education:
     details: "GPA: 17.54/20 | Project: 'Numerical Investigation of Flow over a Blockage'"
 
 # ── Publications ───────────────────────────────────────────────────────
-# Ordered newest to oldest (2026 → 2021)
+# ✅ Sorted strictly by year (newest to oldest)
 publications:
+  # 2026
   - title: "Leveraging machine learning for advanced flow field design in PEMFCs"
     authors: "Ghasabehi, M., Shams, M."
     venue: "Energy Conversion and Management: X, 101586"
@@ -186,33 +186,17 @@ publications:
     type: "journal"
     tags: ["Machine Learning", "Flow Field", "Design", "PEMFC"]
 
-  - title: "Performance analysis of an innovative parallel flow field design of proton exchange membrane fuel cells using multiphysics simulation"
-    authors: "Ghasabehi, M., Ashrafi, M., Shams, M."
-    venue: "Fuel 285, 119194"
-    year: "2021"
-    citations: 114
-    url: ""
-    type: "journal"
-    tags: ["PEMFC", "Flow Field", "Multiphysics", "CFD"]
+  # 2025 (Book)
+  - title: "PEM Fuel Cells Performance: Simulation and Optimization by AI"
+    authors: "Shams, M., & Ghasabehi, M."
+    venue: "Elsevier, 1st Edition. Paperback ISBN: 978-0-443-40356-9 | eBook ISBN: 978-0-443-40357-6"
+    year: "2025"
+    citations: 0
+    url: "https://www.elsevier.com/books/pem-fuel-cells-performance/shams/978-0-443-40356-9"
+    type: "book"
+    tags: ["Fuel Cells", "AI", "Optimization", "Simulation", "Elsevier"]
 
-  - title: "Cathode side transport phenomena investigation and Multi-Objective optimization of a tapered parallel flow field PEMFC"
-    authors: "Ghasabehi, M., Jabbary, A., Shams, M."
-    venue: "Energy Conversion and Management 265, 115761"
-    year: "2022"
-    citations: 75
-    url: ""
-    type: "journal"
-    tags: ["Transport Phenomena", "Multi-Objective", "Tapered Flow Field", "PEMFC"]
-
-  - title: "Multi-objective optimization of operating conditions of an enhanced parallel flow field proton exchange membrane fuel cell"
-    authors: "Ghasabehi, M., Shams, M., Kanani, H."
-    venue: "Energy Conversion and Management 230, 113798"
-    year: "2021"
-    citations: 69
-    url: ""
-    type: "journal"
-    tags: ["Operating Conditions", "Multi-Objective", "Optimization"]
-
+  # 2024
   - title: "The optimization of an innovative interdigitated flow field proton exchange membrane fuel cell by using artificial intelligence"
     authors: "Asadi, M.R., Ghasabehi, M., Ghanbari, S., Shams, M."
     venue: "Energy 290, 130131"
@@ -240,15 +224,6 @@ publications:
     type: "journal"
     tags: ["Bio-Inspired", "AI", "Transport Phenomena"]
 
-  - title: "Multi-objective optimization of a double tapered flow field Proton Exchange Membrane Fuel cell"
-    authors: "Farokhi, E., Ghasabehi, M., Shams, M."
-    venue: "Energy Reports 10, 1652-1671"
-    year: "2023"
-    citations: 25
-    url: ""
-    type: "journal"
-    tags: ["Double Tapered", "Multi-Objective", "PEMFC"]
-
   - title: "Predicting water saturation and oxygen transport resistance in proton exchange membrane fuel cell by artificial intelligence"
     authors: "Ghasabehi, M., Shams, M."
     venue: "Fuel 368, 131557"
@@ -266,6 +241,45 @@ publications:
     url: ""
     type: "journal"
     tags: ["Two-Phase Flow", "Surrogate Model", "Multi-Objective"]
+
+  # 2023
+  - title: "Multi-objective optimization of a double tapered flow field Proton Exchange Membrane Fuel cell"
+    authors: "Farokhi, E., Ghasabehi, M., Shams, M."
+    venue: "Energy Reports 10, 1652-1671"
+    year: "2023"
+    citations: 25
+    url: ""
+    type: "journal"
+    tags: ["Double Tapered", "Multi-Objective", "PEMFC"]
+
+  # 2022
+  - title: "Cathode side transport phenomena investigation and Multi-Objective optimization of a tapered parallel flow field PEMFC"
+    authors: "Ghasabehi, M., Jabbary, A., Shams, M."
+    venue: "Energy Conversion and Management 265, 115761"
+    year: "2022"
+    citations: 75
+    url: ""
+    type: "journal"
+    tags: ["Transport Phenomena", "Multi-Objective", "Tapered Flow Field", "PEMFC"]
+
+  # 2021
+  - title: "Performance analysis of an innovative parallel flow field design of proton exchange membrane fuel cells using multiphysics simulation"
+    authors: "Ghasabehi, M., Ashrafi, M., Shams, M."
+    venue: "Fuel 285, 119194"
+    year: "2021"
+    citations: 114
+    url: ""
+    type: "journal"
+    tags: ["PEMFC", "Flow Field", "Multiphysics", "CFD"]
+
+  - title: "Multi-objective optimization of operating conditions of an enhanced parallel flow field proton exchange membrane fuel cell"
+    authors: "Ghasabehi, M., Shams, M., Kanani, H."
+    venue: "Energy Conversion and Management 230, 113798"
+    year: "2021"
+    citations: 69
+    url: ""
+    type: "journal"
+    tags: ["Operating Conditions", "Multi-Objective", "Optimization"]
 
   - title: "Sensitivity Analysis and Performance Enhancement of Proton Exchange Membrane Fuel Cell"
     authors: "Ghasabehi, M., Shams, M."
