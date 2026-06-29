@@ -26,7 +26,7 @@ export function Experience() {
           viewport={{ once: true, margin: '-80px' }}
           className="section-heading text-foreground mb-14 text-4xl md:text-5xl"
         >
-          Work Experience
+          Experience
         </motion.h2>
 
         <div className="relative">
