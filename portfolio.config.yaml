@@ -98,26 +98,6 @@ experience:
       - Collaboration with experimental groups
       - Mentoring graduate students
 
-  - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
-    role: "Ph.D. Researcher"
-    period: "2020 – 2024"
-    description: |
-      Developed analytical and AI-driven models for oxygen transport resistance and water saturation prediction in PEMFCs. Designed and optimized novel flow-field geometries using CFD, surrogate modeling, and multi-objective optimization.
-    highlights:
-      - Analytical modeling of oxygen transport
-      - Multi-objective optimization
-      - 11 journal publications
-
-  - company: "KN Toosi University of Technology"
-    role: "M.Sc. Researcher"
-    period: "2017 – 2020"
-    description: |
-      Conducted CFD simulations of modified PEMFC flow-fields, improving mass transport and mitigating flooding. Validated simulation results with experimental data.
-    highlights:
-      - CFD simulation of flow-fields
-      - Flooding mitigation
-      - Experimental validation
-
   - company: "Monenco Iran Consulting Engineers"
     role: "Industry Intern – Renewable Energy"
     period: "Sep 2024 – Dec 2024"
