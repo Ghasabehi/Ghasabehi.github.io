@@ -18,8 +18,8 @@ location: "Tehran, Iran"
 avatarUrl: "https://avatars.githubusercontent.com/u/148551599?v=4"
 
 # ── Resume download ────────────────────────────────────────────────────
-resumeUrl: ""  # ✅ REMOVED (empty)
-resumeFileName: ""  # ✅ REMOVED (empty)
+resumeUrl: ""
+resumeFileName: ""
 
 # ── Status ─────────────────────────────────────────────────────────────
 openToWork: true
@@ -36,15 +36,15 @@ contactFormEndpoint: ""
 # ── Section visibility ─────────────────────────────────────────────────
 sections:
   - { id: about,          show: true  }
-  - { id: stats,          show: false }
+  - { id: stats,          show: true  }  # ← CHANGED to true (shows your stats)
   - { id: skills,         show: true  }
   - { id: languages,      show: true  }
-  - { id: experience,     show: false }  # ✅ HIDDEN
+  - { id: experience,     show: true  }
   - { id: projects,       show: true  }
-  - { id: education,      show: false }  # ✅ HIDDEN
+  - { id: education,      show: true  }
   - { id: certifications, show: false }
   - { id: publications,   show: true  }
-  - { id: testimonials,   show: false }  # ✅ HIDDEN (no reviewers)
+  - { id: testimonials,   show: false }
   - { id: contact,        show: true  }
 
 # ── Social links ──────────────────────────────────────────────────────
@@ -84,8 +84,18 @@ skills:
     items: ["Multi-Objective Optimization", "AI-Driven Surrogate Modeling", "Multi-Physics Simulation", "PEMFC Durability"]
 
 # ── Experience ─────────────────────────────────────────────────────────
-# ⚠️ SECTION HIDDEN (show: false)
 experience:
+  - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
+    role: "Postdoctoral Researcher (Supported by INSF)"
+    period: "Jan 2025 – Dec 2025"
+    description: |
+      Leading advanced research on AI-driven optimization of clean energy systems, focusing on surrogate modeling, multi-objective optimization, and data-driven predictive analytics.
+    highlights:
+      - AI-driven surrogate modeling & optimization
+      - Unsteady multi-phase PEMFC modeling
+      - Collaboration with experimental groups
+      - Mentoring graduate students
+
   - company: "KN Toosi University of Technology – PEM Fuel Cells Lab"
     role: "Ph.D. Researcher"
     period: "2020 – 2024"
@@ -143,7 +153,6 @@ projects:
     featured: true
 
 # ── Education ──────────────────────────────────────────────────────────
-# ⚠️ SECTION HIDDEN (show: false)
 education:
   - institution: "KN Toosi University of Technology, Tehran, Iran"
     degree: "Ph.D. in Mechanical Engineering"
@@ -161,7 +170,17 @@ education:
     details: "GPA: 17.54/20 | Project: 'Numerical Investigation of Flow over a Blockage'"
 
 # ── Publications ───────────────────────────────────────────────────────
+# Ordered newest to oldest (2026 → 2021)
 publications:
+  - title: "Leveraging machine learning for advanced flow field design in PEMFCs"
+    authors: "Ghasabehi, M., Shams, M."
+    venue: "Energy Conversion and Management: X, 101586"
+    year: "2026"
+    citations: 0
+    url: ""
+    type: "journal"
+    tags: ["Machine Learning", "Flow Field", "Design", "PEMFC"]
+
   - title: "Performance analysis of an innovative parallel flow field design of proton exchange membrane fuel cells using multiphysics simulation"
     authors: "Ghasabehi, M., Ashrafi, M., Shams, M."
     venue: "Fuel 285, 119194"
@@ -242,15 +261,6 @@ publications:
     url: ""
     type: "journal"
     tags: ["Two-Phase Flow", "Surrogate Model", "Multi-Objective"]
-
-  - title: "Leveraging machine learning for advanced flow field design in PEMFCs"
-    authors: "Ghasabehi, M., Shams, M."
-    venue: "Energy Conversion and Management: X, 101586"
-    year: "2026"
-    citations: 0
-    url: ""
-    type: "journal"
-    tags: ["Machine Learning", "Flow Field", "Design", "PEMFC"]
 
   - title: "Sensitivity Analysis and Performance Enhancement of Proton Exchange Membrane Fuel Cell"
     authors: "Ghasabehi, M., Shams, M."
